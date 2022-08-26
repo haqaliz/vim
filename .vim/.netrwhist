@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/aliz/dev/foresight/public-website/src/views/terms'
+let g:netrw_dirhist_6='/home/aliz/dev/foresight/public-website/src/views/buy'
+let g:netrw_dirhist_5='/home/aliz/dev/dental/templates'
+let g:netrw_dirhist_4='/home/aliz/Desktop/db-attempt/migrations'
+let g:netrw_dirhist_3='/home/aliz/dev/dental/templates'
+let g:netrw_dirhist_2='/home/aliz/dev/dental/src/lib/components'
+let g:netrw_dirhist_1='/home/aliz/dev/foresight/portal2-frontend/src'
+let g:netrw_dirhist_0='/home/aliz/dev/foresight/public-website/src/assets'
+let g:netrw_dirhist_9='/home/aliz/dev/foresight/portal2-backend/local/bin'
+let g:netrw_dirhist_8='/home/aliz/dev/foresight/portal2-backend/local'
