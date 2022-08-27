@@ -134,13 +134,13 @@ endif
 " Emmet
 let g:user_emmet_expandabbr_key='<Tab>'
 imap <expr> <tab> emmet#expandAbbrIntelligent("<tab>")
-let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets/index.json')), "\n"))
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/snippets/index.json')), "\n"))
 
 " Skeletons templates
 augroup templates
   au!
   " read in template files
-  autocmd BufNewFile *.* silent! execute '0r $HOME/.skeletons/template.'.expand("<afile>:e")
+  autocmd BufNewFile *.* silent! execute '0r $HOME/.vim/skeletons/template.'.expand("<afile>:e")
 augroup END
 
 " emoji
