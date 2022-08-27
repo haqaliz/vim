@@ -1,4 +1,4 @@
-# 🛠️ **Vim Configuratoin**
+# 🛠️ **Vim Configuration**
 
 > use `vundle` as plugin manager
 
