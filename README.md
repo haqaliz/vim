@@ -2,6 +2,9 @@
 
 > use `vundle` as plugin manager
 
+**PS.**
+
+Please move `.vim` and `.vimrc` to your user home folder
 
 ## plugins
 
