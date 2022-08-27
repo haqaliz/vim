@@ -27,6 +27,8 @@ Plugin 'mattn/emmet-vim'
 
 Plugin 'lilydjwg/colorizer'
 
+Plugin 'junegunn/vim-emoji'
+
 Plugin 'evanleck/vim-svelte'
 
 call vundle#end()            " required
@@ -45,8 +47,6 @@ set ignorecase
 set smartcase
 set noswapfile
 set relativenumber
-nnoremap / /\\v
-vnoremap / /\\v
 
 set fdm=indent " set fold method and fold everything
 autocmd BufWinEnter * normal zR " unfold everything
@@ -143,19 +143,22 @@ augroup templates
   autocmd BufNewFile *.* silent! execute '0r $HOME/.skeletons/template.'.expand("<afile>:e")
 augroup END
 
-" Emoji shortcuts
-ab :check: ✅
-ab :warning: ⚠
-ab :bulb: 💡
-ab :pin: 📌
-ab :bomb: 💣
-ab :pill: 💊
-ab :link: 🔗
-ab :test: 🧪
-ab :dna: 🧬
-ab :list: 📋
-ab :report: 📢
-ab :folder: 🗂
-ab :anchor: ⚓
-ab :msg: 💬
-ab :keyboard: 🎹
+" emoji
+" emoji list
+" for e in emoji#list()
+"   call append(line('$'), printf('%s (%s)', emoji#for(e), e))
+" endfor
+
+set completefunc=emoji#complete
+
+function! ReplaceEmoji()
+  %s/:\([^:]\+\):/\=emoji#for(submatch(1), submatch(0))/g
+endfunction
+
+
+" keybindings
+
+"" select all
+nnoremap <C-a> ggVG
+
+nnoremap <silent> <Leader>; :<C-u>call ReplaceEmoji()<CR>

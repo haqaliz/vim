@@ -19,3 +19,4 @@
 |`mattn/emmet-vim`|emmet snippets and templates||
 |`lilydjwg/colorizer`|colorize colors in different formats||
 |`evanleck/vim-svelte`|support svelte syntax|
+|`junegunn/vim-emoji`|support emoji replacement|
