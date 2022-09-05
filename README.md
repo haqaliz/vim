@@ -23,3 +23,18 @@ Please move `.vim` and `.vimrc` to your user home folder
 |`lilydjwg/colorizer`|colorize colors in different formats||
 |`evanleck/vim-svelte`|support svelte syntax|
 |`junegunn/vim-emoji`|support emoji replacement|
+
+---
+
+## Wiki
+
+|CMD|Description|
+|:---|:---|
+|`uhci` + one of `{, (, [, ", '`|remove content inside of that element|
+|`ZQ`|quit document without saving (like `:q!`)|
+|`K` in vimrc|open help for each words your cursor was on it|
+|`I` (capital i)|insert mode on beggining of line|
+|`A` (capital a)|insert mode on end of line|
+
+
+

@@ -158,7 +158,4 @@ endfunction
 
 " keybindings
 
-"" select all
-nnoremap <C-a> ggVG
-
 nnoremap <silent> <Leader>; :<C-u>call ReplaceEmoji()<CR>
