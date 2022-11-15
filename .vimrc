@@ -9,7 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'franbach/miramare'
 
-Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'cohama/lexima.vim'
 
@@ -85,6 +85,9 @@ let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
 
 colorscheme miramare
+
+" make vim background same as terminal
+hi Normal guibg=NONE ctermbg=NONE
 
 " helpers
 function SpacesForIndent(n)
