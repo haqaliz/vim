@@ -56,6 +56,10 @@ set number                               "set number
 set mouse=a
 set backspace=indent,eol,start
 set ts=4 sw=4 noet
+set scrolloff=8
+set cmdheight=1
+set signcolumn="yes"
+set updatetime=50
 
 " incremental search
 set incsearch
@@ -83,11 +87,8 @@ set termguicolors
 
 let g:miramare_enable_italic = 1
 let g:miramare_disable_italic_comment = 1
-
+let g:miramare_transparent_background = 1
 colorscheme miramare
-
-" make vim background same as terminal
-hi Normal guibg=NONE ctermbg=NONE
 
 " helpers
 function SpacesForIndent(n)
