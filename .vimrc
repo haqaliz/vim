@@ -9,8 +9,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'franbach/miramare'
 
-" Plugin 'terryma/vim-multiple-cursors'
-
 Plugin 'cohama/lexima.vim'
 
 Plugin 'airblade/vim-gitgutter'
@@ -26,8 +24,6 @@ Plugin 'mattn/webapi-vim'
 Plugin 'mattn/emmet-vim'
 
 Plugin 'lilydjwg/colorizer'
-
-Plugin 'junegunn/vim-emoji'
 
 Plugin 'evanleck/vim-svelte'
 
@@ -146,20 +142,3 @@ augroup templates
   " read in template files
   autocmd BufNewFile *.* silent! execute '0r $HOME/.vim/skeletons/template.'.expand("<afile>:e")
 augroup END
-
-" emoji
-" emoji list
-" for e in emoji#list()
-"   call append(line('$'), printf('%s (%s)', emoji#for(e), e))
-" endfor
-
-set completefunc=emoji#complete
-
-function! ReplaceEmoji()
-  %s/:\([^:]\+\):/\=emoji#for(submatch(1), submatch(0))/g
-endfunction
-
-
-" keybindings
-
-nnoremap <silent> <Leader>; :<C-u>call ReplaceEmoji()<CR>
