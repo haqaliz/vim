@@ -43,6 +43,10 @@ set ignorecase
 set smartcase
 set noswapfile
 set relativenumber
+set colorcolumn=80
+set undofile
+set nobackup
+set termguicolors
 
 set fdm=indent " set fold method and fold everything
 autocmd BufWinEnter * normal zR " unfold everything
@@ -54,8 +58,9 @@ set backspace=indent,eol,start
 set ts=4 sw=4 noet
 set scrolloff=8
 set cmdheight=1
-set signcolumn="yes"
 set updatetime=50
+let g:mapleader=" "
+set nowrap
 
 " incremental search
 set incsearch
