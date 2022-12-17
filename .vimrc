@@ -37,7 +37,6 @@ set background=dark                      "make vim use colors that look good on 
 set showcmd                              "show incomplete cmds down the bottom
 set laststatus=2
 set noshowmode                             "show current mode down the bottom
-set autoindent
 set pastetoggle=<F2>
 set ignorecase
 set smartcase
